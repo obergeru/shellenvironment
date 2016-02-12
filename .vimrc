@@ -69,6 +69,8 @@ let python_highlight_all=1
 syntax on
 "define BadWhitespace before using in a match
 highlight BadWhitespace ctermbg=red guibg=darkred
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
 
 " settings for javascript, html css
 au BufNewFile,BufRead *.js, *.html, *.css
