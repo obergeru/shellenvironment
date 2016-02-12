@@ -121,4 +121,6 @@ if [ -f  /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerlin
 fi
 
 export TERM=xterm-256color
-
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/src
+source /usr/local/bin/virtualenvwrapper.sh

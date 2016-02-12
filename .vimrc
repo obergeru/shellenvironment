@@ -21,6 +21,7 @@ Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 " end snipmate
+Plug 'jmcantrell/vim-virtualenv'
 
 
 call plug#end()

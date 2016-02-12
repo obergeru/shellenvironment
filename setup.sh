@@ -11,3 +11,9 @@ cd solarized-light-ubuntu; ./install.sh
 
 # setting up jedi:
 sudo pip install jedi
+
+# setup virtualenv 
+sudo pip install virtualenv
+
+# setup virtualenvwrapper
+sudo pip install virtualenvwrapper
