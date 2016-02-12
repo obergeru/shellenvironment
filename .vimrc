@@ -14,6 +14,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-easy-align'
 Plug 'altercation/vim-colors-solarized'
 Plug 'tmhedberg/SimpylFold'
+Plug 'davidhalter/jedi-vim'
 
 call plug#end()
 

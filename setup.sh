@@ -9,3 +9,5 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 git clone --recursive https://github.com/reversiblean/solarized-light-ubuntu.git
 cd solarized-light-ubuntu; ./install.sh
 
+# setting up jedi:
+sudo pip install jedi
