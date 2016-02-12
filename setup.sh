@@ -9,5 +9,3 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 git clone --recursive https://github.com/reversiblean/solarized-light-ubuntu.git
 cd solarized-light-ubuntu; ./install.sh
 
-sudo apt-get install build-essential cmake
-sudo apt-get install python-dev

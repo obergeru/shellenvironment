@@ -38,16 +38,13 @@ let g:SimpylFold_docstring_preview=1
 
 
 " Python settings 
-au BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
-
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set textwidth=79
+set expandtab
+set autoindent
+set fileformat=unix
 
 " settings for javascript, html css
 au BufNewFile,BufRead *.js, *.html, *.css
