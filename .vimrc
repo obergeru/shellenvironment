@@ -67,6 +67,8 @@ au BufNewFile,BufRead *.js,*.html,*.css
 
 let python_highlight_all=1
 syntax on
+"define BadWhitespace before using in a match
+highlight BadWhitespace ctermbg=red guibg=darkred
 
 " settings for javascript, html css
 au BufNewFile,BufRead *.js, *.html, *.css
