@@ -15,6 +15,13 @@ Plug 'junegunn/vim-easy-align'
 Plug 'altercation/vim-colors-solarized'
 Plug 'tmhedberg/SimpylFold'
 Plug 'davidhalter/jedi-vim'
+" next lines are snipmate:
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
+" end snipmate
+
 
 call plug#end()
 
