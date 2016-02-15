@@ -27,10 +27,12 @@ Plug 'jmcantrell/vim-virtualenv'
 Plug 'scrooloose/syntastic'
 Plug 'nvie/vim-flake8'
 
-
-
-
 call plug#end()
+
+" snipmate config
+let g:snips_author = 'Øyvind Bergerud'
+let g:snips_email = 'oyvind.bergerud@gmail.com'
+let g:snips_github = 'https://github.com/obergeru/'
 
 set background=dark 
 colorscheme solarized
