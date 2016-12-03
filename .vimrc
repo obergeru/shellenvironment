@@ -28,15 +28,19 @@ Plug 'vim-airline/vim-airline-themes'
 " suround text with tags
 Plug 'tpope/vim-surround'
 
+Plug 'scrooloose/nerdtree'
+
 
 call plug#end()
+
+let g:airline#extensions#tabline#enabled = 1
 
 " snipmate config
 let g:snips_author = 'Øyvind Bergerud'
 let g:snips_email = 'oyvind.bergerud@gmail.com'
 let g:snips_github = 'https://github.com/obergeru/'
 
-set background=light 
+set background=dark 
 set t_Co=256
 colorscheme solarized
 
