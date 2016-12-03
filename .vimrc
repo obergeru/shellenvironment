@@ -25,6 +25,10 @@ Plug 'nvie/vim-flake8'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" suround text with tags
+Plug 'tpope/vim-surround'
+
+
 call plug#end()
 
 " snipmate config

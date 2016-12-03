@@ -113,13 +113,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-if [ -f  /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh ]; then
-	powerline-daemon -q
-	POWERLINE_BASH_CONTINUATION=1
-	POWERLINE_BASH_SELECT=1
-	source /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
-fi
-
 export TERM=xterm-256color
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/src

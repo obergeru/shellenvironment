@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-sudo apt-get install vim python-pip dconf-cli
+sudo apt-get install vim python-pip dconf-cli python3-pip
 sudo -H pip install --upgrade pip
+sudo -H pip3 install --upgrade pip
 
 
 # powerline patch fonts
@@ -22,11 +23,18 @@ git clone --recursive https://github.com/reversiblean/solarized-light-ubuntu.git
 cd solarized-light-ubuntu; ./install.sh
 
 sudo -H  pip install setuptools
+sudo -H  pip3 install setuptools
 # setting up jedi:
 sudo -H  pip install jedi
+sudo -H  pip3 install jedi
 
 # setup virtualenv 
 sudo -H  pip install virtualenv
+sudo -H  pip3 install virtualenv
 
 # setup virtualenvwrapper
 sudo -H  pip install virtualenvwrapper
+sudo -H  pip3 install virtualenvwrapper
+
+cp .bashrc ~/
+cp .vimrc ~/
