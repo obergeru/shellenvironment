@@ -34,6 +34,7 @@ Plug 'scrooloose/nerdtree'
 call plug#end()
 
 let g:airline#extensions#tabline#enabled = 1
+nnoremap <F4> :NERDTreeToggle<CR>
 
 " snipmate config
 let g:snips_author = 'Øyvind Bergerud'
