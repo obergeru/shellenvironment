@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+sudo apt-get install vim python-pip
+sudo -H pip install --upgrade pip
+
 
 # powerline patch fonts
 wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
@@ -18,11 +21,12 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 git clone --recursive https://github.com/reversiblean/solarized-light-ubuntu.git
 cd solarized-light-ubuntu; ./install.sh
 
+sudo -H  pip install setuptools
 # setting up jedi:
-sudo pip install jedi
+sudo -H  pip install jedi
 
 # setup virtualenv 
-sudo pip install virtualenv
+sudo -H  pip install virtualenv
 
 # setup virtualenvwrapper
-sudo pip install virtualenvwrapper
+sudo -H  pip install virtualenvwrapper
