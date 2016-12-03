@@ -1,8 +1,3 @@
-" setup of powerline dont duplicate with pluginstall
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
-
 set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
 set laststatus=2
 set encoding=utf-8
@@ -26,6 +21,9 @@ Plug 'jmcantrell/vim-virtualenv'
 " python syntax
 Plug 'scrooloose/syntastic'
 Plug 'nvie/vim-flake8'
+" vim airline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
@@ -34,17 +32,10 @@ let g:snips_author = 'Øyvind Bergerud'
 let g:snips_email = 'oyvind.bergerud@gmail.com'
 let g:snips_github = 'https://github.com/obergeru/'
 
-set background=dark 
+set background=light 
+set t_Co=256
 colorscheme solarized
 
-if has('gui_running')
-	" do something
-
-else
-	" in terminal mode
-	set t_Co=16
-	let g:solarized_termcolors=16
-endif
 
 " Enable folding
 set foldmethod=indent

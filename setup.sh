@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo apt-get install vim python-pip
+sudo apt-get install vim python-pip dconf-cli
 sudo -H pip install --upgrade pip
 
 
