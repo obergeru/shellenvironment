@@ -29,6 +29,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-surround'
 
 Plug 'scrooloose/nerdtree'
+Plug 'edkolev/tmuxline.vim'
+Plug 'ervandew/supertab'
+
 
 
 call plug#end()
