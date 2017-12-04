@@ -46,7 +46,7 @@ let g:snips_github = 'https://github.com/obergeru/'
 
 set background=dark 
 set t_Co=256
-colorscheme solarized
+colorscheme elflord
 
 
 " Enable folding
