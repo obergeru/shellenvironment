@@ -31,6 +31,7 @@ Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdtree'
 Plug 'edkolev/tmuxline.vim'
 Plug 'ervandew/supertab'
+Plug 'pearofducks/ansible-vim'
 
 
 
@@ -82,3 +83,7 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \ set tabstop=2
     \ set softtabstop=2
     \ set shiftwidth=2
+
+
+au BufRead,BufNewFile */playbooks/*.yml set filetype=ansible
+map <F7> mzgg=G`z
