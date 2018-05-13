@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo apt-get install vim python-pip dconf-cli python3-pip
+sudo apt-get install vim python-pip dconf-cli python3-pip zsh -y
 sudo -H pip install --upgrade pip
 sudo -H pip3 install --upgrade pip
 sudo -H apt-get install git
@@ -43,3 +43,5 @@ cp .bashrc ~/
 cp .vimrc ~/
 cp .tmux.conf ~/
 cp .vimtmux.conf ~/
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
