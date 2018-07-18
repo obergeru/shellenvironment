@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-sudo apt-get install vim python-pip dconf-cli python3-pip
-sudo -H pip install --upgrade pip
-sudo -H pip3 install --upgrade pip
-sudo -H apt-get install git
+sudo apt-get install vim python-pip dconf-cli python3-pip -y 
+#sudo -H pip install --upgrade pip
+#sudo -H pip3 install --upgrade pip
+sudo -H apt-get install git -y
 
-git config --global user.email "oyvind.bergerud@gmail.com"
+git config --global user.email "oyvind.bergerud@gjensidige.com"
 git config --global user.name "Øyvind Bergerud"
 
 

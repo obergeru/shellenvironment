@@ -58,18 +58,18 @@ nnoremap <space> za
 let g:SimpylFold_docstring_preview=1
 
 au BufNewFile,BufRead *.py
-    \ set tabstop=4 |
-    \ set softtabstop=4 |
-    \ set shiftwidth=4 |
-    \ set textwidth=79 |
-    \ set expandtab |
-    \ set autoindent |
-    \ set fileformat=unix |
+			\ set tabstop=4 |
+			\ set softtabstop=4 |
+			\ set shiftwidth=4 |
+			\ set textwidth=79 |
+			\ set expandtab |
+			\ set autoindent |
+			\ set fileformat=unix |
 
 au BufNewFile,BufRead *.js,*.html,*.css
-    \ set tabstop=2 |
-    \ set softtabstop=2 |
-    \ set shiftwidth=2 |
+			\ set tabstop=2 |
+			\ set softtabstop=2 |
+			\ set shiftwidth=2 |
 
 let python_highlight_all=1
 syntax on
@@ -87,3 +87,8 @@ au BufNewFile,BufRead *.js, *.html, *.css
 
 au BufRead,BufNewFile */playbooks/*.yml set filetype=ansible
 map <F7> mzgg=G`z
+
+
+com! FormatJSON %!python -m json.tool
+com! Json2Yaml %!json2yaml
+nmap =j :%!python -m json.tool<CR>
