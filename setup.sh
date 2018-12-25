@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo apt-get install vim python-pip dconf-cli python3-pip zsh -y
+sudo apt-get install vim python-pip dconf-cli python3-pip python3-setuptools| zsh -y
 sudo -H pip install --upgrade pip
 sudo -H pip3 install --upgrade pip
 sudo -H apt-get install git
