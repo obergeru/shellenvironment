@@ -96,7 +96,7 @@ source $ZSH/oh-my-zsh.sh
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/src
-source /usr/bin/virtualenvwrapper.sh
-#export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source /usr/local/bin/virtualenvwrapper.sh
 
 export TERM=xterm-256color
