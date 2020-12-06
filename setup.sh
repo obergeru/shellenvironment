@@ -2,9 +2,9 @@
 
 sudo apt-get install vim dconf-cli python3-pip python3-setuptools zsh curl -y
 sudo -H pip3 install --upgrade pip
-sudo -H apt-get install git
+sudo -H apt-get install git -y
 
-git config --global user.email "oyvind.bergerud@gjensidige.com"
+git config --global user.email "oyvind.bergerud@gjensidige.no"
 git config --global user.name "Øyvind Bergerud"
 
 
@@ -41,4 +41,11 @@ cd fonts
 # clean-up a bit
 cd ..
 rm -rf fonts
+
+cp .zshrc ~/
+mkdir ~/src
+
+
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
 

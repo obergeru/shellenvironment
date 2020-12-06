@@ -68,7 +68,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -112,3 +112,5 @@ export TERM=xterm-256color
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export SPACESHIP_VENV_SYMBOL="🐍 "
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
