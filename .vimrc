@@ -10,6 +10,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'altercation/vim-colors-solarized'
 Plug 'tmhedberg/SimpylFold'
 Plug 'davidhalter/jedi-vim'
+Plug 'stephpy/vim-yaml'
 " next lines are snipmate:
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
@@ -83,6 +84,7 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \ set tabstop=2
     \ set softtabstop=2
     \ set shiftwidth=2
+
 
 
 au BufRead,BufNewFile */playbooks/*.yml set filetype=ansible
