@@ -49,9 +49,14 @@ mkdir ~/src
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
+<<<<<<< HEAD
 # autosuggestion
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 
 # setup coc for kubernetes
 # https://octetz.com/docs/2020/2020-01-06-vim-k8s-yaml-support/
+=======
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+>>>>>>> e5f7fb2392c1163a2e57209369af6e0f7c59d9a6
