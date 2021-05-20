@@ -1,0 +1,16 @@
+{
+  "languageserver": {
+      "golang": {
+        "command": "gopls",
+        "rootPatterns": ["go.mod"],
+        "filetypes": ["go"]
+      }
+  },
+
+  "yaml.schemas": {
+      "file:///home/g020191/.config/coc/argocd-schema.json": "*/argocd/*yaml",
+      "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/kustomization.json": "*/manifests/base/*.yaml",
+      "kubernetes": "/*.yaml"
+  }
+
+}
