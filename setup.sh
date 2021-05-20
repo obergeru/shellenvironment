@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo apt-get install vim dconf-cli python3-pip python3-setuptools zsh curl -y
+sudo apt-get install vim dconf-cli python3-pip python3-setuptools zsh curl nodejs -y
 sudo -H pip3 install --upgrade pip
 sudo -H apt-get install git -y
 
@@ -51,3 +51,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 # autosuggestion
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+
+# setup coc for kubernetes
+# https://octetz.com/docs/2020/2020-01-06-vim-k8s-yaml-support/
