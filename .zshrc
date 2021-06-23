@@ -1,3 +1,6 @@
+# set gpg first
+export GPG_TTY=$(tty)
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -62,6 +65,7 @@ plugins=(
   git
   kubectl
   zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -106,3 +110,12 @@ export TERM=xterm-256color
 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
+# For Loading the SSH key
+/usr/bin/keychain -q --nogui $HOME/.ssh/id_rsa
+source $HOME/.keychain/$HOST-sh
+
+alias docker=podman
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# enable gpg
+echo "test" | gpg --clearsign > /dev/null 2>&1
